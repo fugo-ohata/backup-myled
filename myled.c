@@ -4,6 +4,7 @@
 #include<linux/device.h>
 #include<linux/uaccess.h>
 #include<linux/io.h>
+
 MODULE_AUTHOR("Fugo Ohata");
 MODULE_DESCRIPTION("driver for LED control");
 MODULE_LICENSE("GPL");
@@ -13,6 +14,8 @@ static dev_t dev;
 static struct cdev cdv;
 static struct class *cls = NULL;
 static volatile u32 *gpio_base = NULL;
+
+
 
 static ssize_t led_write(struct file*flip, const char* buf, size_t count, loff_t* pos)
 {
