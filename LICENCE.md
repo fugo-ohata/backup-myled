@@ -1,3 +1,3 @@
-著作権表記
-上田先生
+著作者
+上田
 https://github.com/ryuichiueda/robosys2020
